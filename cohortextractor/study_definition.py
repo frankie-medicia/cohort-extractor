@@ -132,7 +132,7 @@ class StudyDefinition:
     @staticmethod
     def get_backend_for_database_url(database_url):
         if database_url.startswith("mssql://") or database_url.startswith(
-            "mssql+pyodbc://"
+            "mssql+pyodbc://" or database_url.startswith("mssql+pymssql")
         ):
             from .tpp_backend import TPPBackend
 
