@@ -99,9 +99,10 @@ typing-extensions==4.0.1
     # via black
 virtualenv==20.10.0
     # via pre-commit
-wheel==0.37.0
+wheel==0.38.0
     # via pip-tools
 
 # The following packages are considered to be unsafe in a requirements file:
 # pip
 # setuptools
+setuptools>=65.5.1 # not directly required, pinned by Snyk to avoid a vulnerability
