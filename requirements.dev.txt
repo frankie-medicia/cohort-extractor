@@ -8,7 +8,7 @@ attrs==21.2.0
     # via pytest
 backports.entry-points-selectable==1.1.1
     # via virtualenv
-black==21.12b0
+black==24.3.0
     # via -r requirements.dev.in
 cfgv==3.3.1
     # via pre-commit
