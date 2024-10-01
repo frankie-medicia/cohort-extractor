@@ -8,7 +8,7 @@ attrs==21.2.0
     # via pytest
 backports.entry-points-selectable==1.1.1
     # via virtualenv
-black==21.12b0
+black==24.3.0
     # via -r requirements.dev.in
 cfgv==3.3.1
     # via pre-commit
@@ -99,9 +99,11 @@ typing-extensions==4.0.1
     # via black
 virtualenv==20.10.0
     # via pre-commit
-wheel==0.37.0
+wheel==0.38.0
     # via pip-tools
 
 # The following packages are considered to be unsafe in a requirements file:
 # pip
 # setuptools
+setuptools>=70.0.0 # not directly required, pinned by Snyk to avoid a vulnerability
+zipp>=3.19.1 # not directly required, pinned by Snyk to avoid a vulnerability
